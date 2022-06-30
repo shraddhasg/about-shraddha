@@ -1,7 +1,42 @@
-#main {
-  border: 3px solid #000;
+.mainSection {
   text-align: center;
-  background: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin: 5px 5px;
+  padding: 5px;
+
+  animation: example 1s ease-in-out infinite alternate;
+  animation-duration: 4s;
+
+  /* background: rgb(191, 103, 250); */
+}
+.main-div {
+  padding: 50px;
+}
+.name-section {
+  background-color: #000 !important;
+}
+
+.image {
+  height: 300px;
+  width: 300px;
+  border: 2px solid #000;
+  border-radius: 200px;
+}
+
+@keyframes example {
+  0% {
+    background-color: #6e72551f;
+  }
+  50% {
+    background-color: #96704ba3;
+  }
+  100% {
+    background-color: #21233521;
+  }
+  /* 100% {
+      background-color: #96704ba3;
+    } */
 }
 
 .glow {
@@ -11,7 +46,7 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
       0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -23,83 +58,20 @@
   }
 }
 
-#name {
-  /* vertical-align: baseline !important; */
+.social-media {
+  float: right;
+  margin-top: 200px;
 
-  --container-corvid-border-color: rgba(
-    var(--brd, var(--color_15)),
-    var(--alpha-brd, 1)
-  );
-  --container-corvid-border-size: var(--brw, 1px);
-  --container-corvid-background-color: rgba(
-    var(--bg, var(--color_11)),
-    var(--alpha-bg, 1)
-  );
-
-  width: 165px;
-  height: 120px;
-  justify-self: start;
-  margin-left: 80px;
-  align-self: start;
-  position: absolute;
-  grid-area: 1 / 1 / 2 / 2;
-  pointer-events: auto;
-  margin-top: 10px;
-
-  text-align: center;
-  padding-top: auto;
-
-  text-decoration: dashed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.name-box {
-  border: var(--container-corvid-border-width, var(--brw, 1px)) solid
-    var(
-      --container-corvid-border-color,
-      rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1))
-    );
-  background-color: var(
-    --container-corvid-background-color,
-    rgba(var(--bg, var(--color_11)), var(--alpha-bg, 1))
-  ) !important;
-  border-radius: var(--rd, 5px);
-  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+/* .main-div .instagram {
+  margin-top: 200px;
 
-.mainSection {
-  background-color: #000;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  float: right;
 
-  width: auto;
-  height: auto;
-  /* width: 100%;
-  height: 70%; */
-}
-/* section {
-  background-color: #000;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
- 
-  width: 100%;
-  height: 70%;
+  
+  position: fixed;
 } */
-.main-div {
-  margin: auto;
-  /* width: 97%; */
-  width: auto;
-  height: auto;
-  /* border: 3px solid #73ad21; */
-  padding: 10px;
-}
-.img2 {
-  margin-bottom: 100px;
-}
-.image-blurred-edge {
-  box-shadow: inset 1 1 black;
-}

@@ -1,4 +1,6 @@
-.mainSection {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.photoBackground {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
@@ -67,11 +69,59 @@
   align-items: center;
 }
 
-/* .main-div .instagram {
-  margin-top: 200px;
+body {
+  background-color: #000;
+}
 
-  float: right;
+.quote {
+  font-family: wfont_231769_2656c71b3b0e4797b9b65faf2e04a001,
+    wf_2656c71b3b0e4797b9b65faf2, orig_bebasneue;
+  font-size: 23px;
+  letter-spacing: 0.25em;
 
-  
-  position: fixed;
-} */
+  color: white;
+  text-align: center;
+}
+
+.bio {
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 23px;
+
+  color: white;
+  text-align: center;
+}
+
+.about-education,
+.work-interest {
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 23px;
+
+  color: white;
+  text-align: left;
+
+  margin-left: 500px;
+  padding-left: 50px;
+}
+.education,
+.about-shraddha {
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 17px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  /* width: 33.33%; */
+  width: 30%;
+  padding: 30px;
+  height: 200px; /* Should be removed. Only for demonstration */
+  text-align: center;
+}
+.interest-img {
+  margin-top: 0px;
+}
+
+
